@@ -1,20 +1,19 @@
 <?php session_start(); ?>
 <?php require 'header.php'; ?>
-<?php require 'db-connect.php'; ?>
+<?php require 'db_conect.php'; ?>
 <h1>ログイン<h1>
 <?php
 //dbで使う名前などはまだ決めてないので仮入力 
 unset($_SESSION['customer']);
 if($_POST['password'] != null && $_POST['login'] != null){
 $pdo = new PDO($connect,USER,PASS);
-$sql = $pdo->prepare('select * from kokonidbname where mail_address=?');//user_name ユーザー名をメアドに変更
+$sql = $pdo->prepare('select * from client where client_address=?');//user_name ユーザー名をメアドに変更
 $sql->execute([$_POST['login']]);
 foreach($sql as $row){
     if($_POST["password"]==$row['password']){
     $_SESSION['customer']=[
-        'id'=>$row['id'],'name'=>$row['user_name'],'post'=>$row['post'],
-        'password'=>$row['password'],'address'=>$row['mail_address'],
-        'useraddress'=>$row['user_address'],
+        'id'=>$row['client_id'],'name'=>$row['name'],
+        'password'=>$row['password'],'address'=>$row['client_address']
     ];
     }
 }

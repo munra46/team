@@ -1,13 +1,13 @@
 <?php require 'header.php'; ?>
-<form action="login_output.php" method="post">
-    <p >メールアドレス　　　<input type="text" name="login"><br></p>
-    <p >_____________________________________</p>
-    <p >パスワード　　　<input type="password" name="password"><br></p>
-    <p >_____________________________________</p>
-    <button type="submit">ログイン</button>
+<table id="cate" align="center">
+<form action="Top.php" method="post">
+    <tr><td><h1>チャイニーズドラゴン</h1></td></tr>
+    <tr><td>メールアドレス　　　<input type="text" name="login"></td></tr>
+    <tr><td>_____________________________________</td></tr>
+    <tr><td>パスワード　　　　　<input type="password" name="password"></td></tr>
+    <tr><td>_____________________________________</td></tr>
+    <tr><td><div align="center"><button type="submit">ログイン</button></div></td></tr>
 </form>
-
-<p>初めての方はこちらから</p>
-<a href="customer_input.php"><button>新規登録</button></a>
-</div>
+<tr><td><div align="center"><a href="customer_input.php"><button>新規登録</button></a></dev></td></tr>
+<tr><td><div align="center"><a href="Top.php?gest=gest"><button>ゲストログイン</button></a></div></td></tr>
 <?php require 'footer.php'; ?>    
