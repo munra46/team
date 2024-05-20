@@ -5,7 +5,7 @@
 if(isset($_GET['gest'])){
 ?>
     <!-- メニュー -->
-    <table id="cate" align="center">
+    <table align="center">
     
     <tr><td><div align="center">チャイニーズドラゴン</div></td></tr>
     <tr><td><div align="center">機能を利用するには<button><a href="login_input.php">ログイン画面へ戻る</a></button></div></td></tr>
@@ -18,7 +18,7 @@ if(isset($_GET['gest'])){
     echo '<tr><td><div align="center">スレッド一覧</div></td></tr>';
     echo '<tr>';
     echo '<td>';
-    echo '<div align="center">';
+    echo '<div  align="left" >';
     foreach($sql as $row){
         
         echo '<a href="******.php?title=',$row['title'],'">',$row['title'],'</a>　　';
@@ -30,9 +30,12 @@ if(isset($_GET['gest'])){
         $tr=0;
         echo '<tr>';
         echo '<td>';
-        echo '<div align="center">';
+        echo '<div align="left">';
         }
     }
+    echo '</div>';
+    echo '</td>';
+    echo '</tr>';
     echo '<tr><td><div align="center">';
     echo '<button><a href="Popularity.php">人気スレッドへ</a></button></div></td></tr>';
     
@@ -84,9 +87,9 @@ $check=$row['freeze'];
 }
 if($check == 1){
 ?>
-<table id="cate" align="center">
+<table align="center">
   <tr><td><div align="center">チャイニーズドラゴン　　　　　
-  <a href="logout_input.php" id="b">ログアウト</a></div></td></tr>
+  <a href="login_input.php">ログアウト</a></div></td></tr>
   
   <tr><td><div align="center">
   <form action="Top_kensakukekka.php" method="post">
@@ -101,7 +104,7 @@ $sql = $pdo->query('select * from thread');
     echo '<tr><td><div align="center">スレッド一覧</div></td></tr>';
     echo '<tr>';
     echo '<td>';
-    echo '<div align="center">';
+    echo '<div align="left">';
     foreach($sql as $row){
         
         echo '<a href="******.php?title=',$row['title'],'">',$row['title'],'</a>　　';
@@ -113,9 +116,12 @@ $sql = $pdo->query('select * from thread');
         $tr=0;
         echo '<tr>';
         echo '<td>';
-        echo '<div align="center">';
+        echo '<div align="left">';
         }
     }
+    echo '</div>';
+    echo '</td>';
+    echo '</tr>';
     echo '<tr><td><div align="center"><button><a href="*">新規スレッド書き込み画面へ</a></button>';
     echo '<button><a href="Popularity.php">人気スレッドへ</a></button></div></td></tr>';
     

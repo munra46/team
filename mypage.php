@@ -60,8 +60,6 @@
          echo '<input type="submit" value="更新">';
          echo'</form></div>';
          echo '</td></tr>';
-         
-         echo '<tr><td><div align="center"><button><a href="Top.php">戻る</a></button></div></td></tr>';
          }
          echo '<tr><td><div align="center"><button><a href="*">投稿</a></button></div></td></tr>';
          echo '<tr><td><div align="center"><button><a href="logout_input.php">ログアウト</a></button></div></td></tr>';

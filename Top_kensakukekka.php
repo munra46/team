@@ -3,7 +3,7 @@
 <table align="center">
 
     <tr><td><div align="center">チャイニーズドラゴン　　　　　
-    <a href="logout_input.php" id="b">ログアウト</a></div></td></tr>
+    <a href="login_input.php">ログアウト</a></div></td></tr>
     
     <tr><td><div align="center">
     <form action="Top_kensakukekka.php" method="post">
@@ -22,7 +22,7 @@ if(isset($_POST['kensaku'])){
     echo '<tr><td>スレッド一覧</td></tr>';
     echo '<tr>';
     echo '<td>';
-    echo '<div align="center">';
+    echo '<div align="left">';
     foreach($sql as $row){
     echo '<a href="partner.php?genre=',$row['title'],'">',$row['title'],'</a>　　';
         $tr++;
@@ -33,7 +33,7 @@ if(isset($_POST['kensaku'])){
         $tr=0;
         echo '<tr>';
         echo '<td>';
-        echo '<div align="center">';
+        echo '<div align="left">';
         }
     }
 }else{
@@ -43,7 +43,7 @@ $tr=0;
 echo '<tr><td>スレッド一覧</td></tr>';
 echo '<tr>';
 echo '<td>';
-echo '<div align="center">';
+echo '<div align="left">';
 foreach($sql as $row){
     echo '<a href="partner.php?genre=',$row['title'],'">',$row['title'],'</a>　　';
     $tr++;
@@ -54,12 +54,15 @@ foreach($sql as $row){
         $tr=0;
         echo '<tr>';
         echo '<td>';
-        echo '<div align="center">';
+        echo '<div align="left">';
         }
     }
 
 
 }
+echo '</div>';
+echo '</td>';
+echo '</tr>';
 ?>
     <tr><td><div align="center"><button><a href="*">新規スレッド書き込み画面へ</a></button>
     <button><a href="Popularity.php">人気スレッドへ</a></button></div></td></tr>

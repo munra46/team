@@ -8,6 +8,8 @@
     <tr><td>_____________________________________</td></tr>
     <tr><td><div align="center"><button type="submit">ログイン</button></div></td></tr>
 </form>
-<tr><td><div align="center"><a href="customer_input.php"><button>新規登録</button></a></dev></td></tr>
-<tr><td><div align="center"><a href="Top.php?gest=gest"><button>ゲストログイン</button></a></div></td></tr>
+<tr><td><div align="center"><button><a href="customer_input.php">新規登録</a></button></dev></td></tr>
+<tr><td><div align="center"><button><a href="Top.php?gest=gest">ゲストログイン</a></button></div></td></tr>
+<tr><td><div align="center"><button><a href="*">お問い合わせ</a></button></div></td></tr>
+</table>
 <?php require 'footer.php'; ?>    

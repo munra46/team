@@ -5,19 +5,19 @@ $pdo=new PDO($connect,USER,PASS);
 if($_POST['word1'] == null && $_POST['word2'] == null && $_POST['word3'] == null){
 echo '禁止ワードを入力してください';
 }else{   
-if(isset($_POST['word1'])){
+if(isset($_POST['word1']) && $_POST['word1'] != null){
 $word1=$pdo->prepare('insert into ngword values(null,?)');
 $word1->execute([
     $_POST['word1']
 ]);
 }
-if(isset($_POST['word2'])){
+if(isset($_POST['word2']) && $_POST['word2'] != null){
     $word2=$pdo->prepare('insert into ngword values(null,?)');
     $word2->execute([
         $_POST['word2']
     ]);
 }
-if(isset($_POST['word3'])){
+if(isset($_POST['word3']) && $_POST['word3'] != null){
     $word3=$pdo->prepare('insert into ngword values(null,?)');
     $word3->execute([
         $_POST['word3']
