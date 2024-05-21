@@ -19,6 +19,6 @@
     echo'</td></tr>';
     
     ?>
-    <tr><td><div align="center"><button><a href="Forbidden_word.php">戻る</a></button></div></td></tr>
     </table>
+    <div align="center"><button><a href="Forbidden_word.php#sample">戻る</a></button>
 <?php require 'footer.php'; ?>

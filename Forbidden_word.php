@@ -5,7 +5,7 @@
 $pdo = new PDO($connect,USER,PASS);
 $sql = $pdo->query('select * from ngword');
 echo '<table align="center">';
-echo '<tr><td><div align="center"><h2>チャイニーズドラゴン</h2></div></td></tr>';
+echo '<tr><td><div align="center"><h2 id="sample">チャイニーズドラゴン</h2></div></td></tr>';
 echo '<tr><td><div align="center">禁止ワード一覧</div></td></tr>';
     foreach($sql as $row){
         echo '<tr>';

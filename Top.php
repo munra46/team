@@ -37,7 +37,7 @@ if(isset($_GET['gest'])){
     echo '</td>';
     echo '</tr>';
     echo '<tr><td><div align="center">';
-    echo '<button><a href="Popularity.php">人気スレッドへ</a></button></div></td></tr>';
+    echo '<button><a href="Popularity.php?gest=gest">人気スレッドへ</a></button></div></td></tr>';
     
     echo '<tr><td>';
     echo '<div align="center">';

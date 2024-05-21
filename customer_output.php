@@ -1,7 +1,7 @@
 <?php session_start();?>
 <?php require 'header.php'; ?>
 <?php require 'db_conect.php';?>
-<h1>新規登録</h1>
+<div align="center"><h1>新規登録</h1></div>
 <?php
      $pdo=new PDO($connect,USER,PASS);
      if(isset($_SESSION['customer'])){
@@ -28,15 +28,15 @@
             $sql->execute([
                 $_REQUEST['address'],$_REQUEST['password'],$_REQUEST['name']   
             ]);
-                echo'<p class="log">情報を登録しました。</p>';
-                echo '<a href="login_input.php" id="my"><button>ログインへ戻る</button></a>';
+                echo'<div align="center">情報を登録しました。</div>';
+                echo '<div align="center"><a href="login_input.php"><button>ログインへ戻る</button></a></div>';
     }else{
-        echo'<p class="log">ログイン名が既に使用されています。</p>';
-        echo '<a href="customer-input.php" id="my"><button>登録画面へ戻る</button></a>';
+        echo'<div align="center">ログイン名が既に使用されています。</div>';
+        echo '<div align="center"><a href="customer_input.php"><button>登録画面へ戻る</button></a></div>';
     }
     }else{
-        echo'<p class="log">メールアドレスが既に使用されています。</p>';
-        echo '<a href="customer-input.php" id="my"><button>登録画面へ戻る</button></a>';
+        echo'<div align="center">メールアドレスが既に使用されています。</div>';
+        echo '<div align="center"><a href="customer_input.php"><button>登録画面へ戻る</button></a></div>';
     }
 ?>
 <?php require 'footer.php'; ?>

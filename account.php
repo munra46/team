@@ -11,6 +11,9 @@ echo '<tr>';
 echo '<td>';
 echo '<div align="right">';
 echo $row['name'],'<button><a href="account_management.php?client_id=',$row['client_id'],'">編集</a></button>';
+if($row['freeze']!=1){
+    echo '凍結されています';
+}
 echo '</div>';
 echo '</td>';
 echo '</tr>';
