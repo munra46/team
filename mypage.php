@@ -60,11 +60,12 @@
          echo '<input type="submit" value="更新">';
          echo'</form></div>';
          echo '</td></tr>';
-         }
+         
          echo '<tr><td><div align="center"><button><a href="*">投稿</a></button></div></td></tr>';
-         echo '<tr><td><div align="center"><button><a href="logout_input.php">ログアウト</a></button></div></td></tr>';
-         echo '<tr><td><div align="center"><button><a href="*">アカウント削除</a></button></div></td></tr>';
+         echo '<tr><td><div align="center"><button><a href="login_input.php">ログアウト</a></button></div></td></tr>';
+         echo '<tr><td><div align="center"><button><a href="account_delete_check.php?id=',$row['client_id'],'">アカウント削除</a></button></div></td></tr>';
          echo '</table>';
+         }
     
     $id = $pdo->prepare('select client_id from client where name=?');
     $id->execute([$name]);

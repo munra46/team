@@ -1,4 +1,5 @@
 <?php require 'header.php'; ?>
+<?php unset($_SESSION['customer']); ?>
 <table id="cate" align="center">
 <form action="Top.php" method="post">
     <tr><td><h1>チャイニーズドラゴン</h1></td></tr>
