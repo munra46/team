@@ -65,6 +65,7 @@ echo '</td>';
 echo '</tr>';
 ?>
     <tr><td><div align="center"><button><a href="*">新規スレッド書き込み画面へ</a></button>
+    <button><a href="*">ジャンル一覧へ</a></button>
     <button><a href="Popularity.php">人気スレッドへ</a></button></div></td></tr>
     
     <tr><td><div align="center"><button><a href="*">個人チャット</a></button>

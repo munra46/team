@@ -37,6 +37,7 @@ if(isset($_GET['gest'])){
     echo '</td>';
     echo '</tr>';
     echo '<tr><td><div align="center">';
+    echo '<button><a href="*">ジャンル一覧へ</a></button>';
     echo '<button><a href="Popularity.php?gest=gest">人気スレッドへ</a></button></div></td></tr>';
     
     echo '<tr><td>';
@@ -123,6 +124,7 @@ $sql = $pdo->query('select * from thread');
     echo '</td>';
     echo '</tr>';
     echo '<tr><td><div align="center"><button><a href="*">新規スレッド書き込み画面へ</a></button>';
+    echo '<button><a href="*">ジャンル一覧へ</a></button>';
     echo '<button><a href="Popularity.php">人気スレッドへ</a></button></div></td></tr>';
     
     echo '<tr><td><div align="center"><button><a href="*">個人チャット</a></button>';
