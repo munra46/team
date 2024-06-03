@@ -127,7 +127,7 @@ $sql = $pdo->query('select * from thread');
     echo '<button><a href="*">ジャンル一覧へ</a></button>';
     echo '<button><a href="Popularity.php">人気スレッドへ</a></button></div></td></tr>';
     
-    echo '<tr><td><div align="center"><button><a href="*">個人チャット</a></button>';
+    echo '<tr><td><div align="center"><button><a href="chat.php">個人チャット</a></button>';
     echo '<button><a href="mypage.php">マイページ</a></button>';
     echo '<button><a href="*">お問い合わせ</a></button>';
     echo '<button><a href="*">使い方・注意</a></button></div></td></tr>';
